@@ -1,0 +1,33 @@
+name: "토의"
+description: 토론용 Issue 작성 양식입니다.
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        작성 예시 : "[DISCURSSION] GET method 기능 구현 논의"
+  - type: textarea
+    id: feat-description
+    attributes:
+      label: 주제
+      description: 어떠한 토의를 시작하시는 건지 적어주세요.
+      placeholder: 설명을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 설명
+      description: 주제에 대한 간략한 설명이나 주된 토의 내용에 대해서 설명해주세요.
+      placeholder: 설명을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: 의견 (선택 사항)
+      description: 고려하신 방법이나, 접근에 대해서 설명해주세요.
+      render: shell-script
+      placeholder: 설명을 적어주세요.
+    validations:
+      required: false
