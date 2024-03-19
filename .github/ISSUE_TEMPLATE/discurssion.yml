@@ -1,4 +1,4 @@
-name: "토의"
+name: "토의 템플릿"
 description: 토론용 Issue 작성 양식입니다.
 labels: ["discurssion"]
 body:
