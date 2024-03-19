@@ -1,0 +1,16 @@
+name: 42Cursus CPP Makefile Test
+
+on:
+  push:
+    branches: [ "master", "develop" ]
+  pull_request:
+    branches: [ "master", "develop" ]
+
+jobs:
+  test-makefiles:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: 42Cursus C/CPP Makefile Testing
+        uses: fing9/42Cursus-Makefile-Test@v3.0.2
